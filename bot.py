@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+import os
+>>>>>>> d4026ec (first commit)
 import discord
 from discord.ext import commands, tasks
 from discord import app_commands
@@ -250,4 +254,9 @@ async def manage(interaction: discord.Interaction, task_id: str, action: str, ne
     conn.close()
     await interaction.response.send_message(msg, ephemeral=True)
 
+<<<<<<< HEAD
 bot.run('MTQ2ODExNTA5MTM1NzU2OTA0Ng.GbQmgB.RcrsFlXNNe5HX-eYT5iMznTxoE5mOv7AH-jQY8')
+=======
+token = os.getenv('DISCORD_TOKEN')
+bot.run(token)
+>>>>>>> d4026ec (first commit)
